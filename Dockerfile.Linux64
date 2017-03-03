@@ -1,0 +1,12 @@
+FROM debian:jessie-slim
+
+WORKDIR /root/
+
+EXPOSE 25565
+EXPOSE 8080
+
+ADD https://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz ./ 
+
+COPY Server .
+
+CMD ["/root/Server/Cuberite"]

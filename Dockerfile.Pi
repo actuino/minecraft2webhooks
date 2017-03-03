@@ -4,6 +4,7 @@ FROM resin/rpi-raspbian:latest
 WORKDIR /root/
 
 EXPOSE 25565
+EXPOSE 8080
 
 ADD https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz ./ 
 
