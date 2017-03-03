@@ -1,0 +1,12 @@
+FROM armhf/alpine:latest
+#FROM resin/rpi-raspbian:latest
+
+WORKDIR /root/
+
+EXPOSE 25565
+
+ADD cuberite-armhf/Cuberite.tar.gz ./ 
+
+COPY Server .
+
+CMD ["/root/Cuberite/Cuberite"]
