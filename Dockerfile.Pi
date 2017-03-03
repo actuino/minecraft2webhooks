@@ -9,4 +9,4 @@ ADD cuberite-armhf/Cuberite.tar.gz ./
 
 COPY Server .
 
-CMD ["/root/Cuberite/Cuberite"]
+CMD ["/root/Server/Cuberite"]
