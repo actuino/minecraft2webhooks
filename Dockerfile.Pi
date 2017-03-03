@@ -1,11 +1,11 @@
-FROM armhf/alpine:latest
-#FROM resin/rpi-raspbian:latest
+FROM resin/rpi-raspbian:latest
+#FROM armhf/alpine:latest
 
 WORKDIR /root/
 
 EXPOSE 25565
 
-ADD cuberite-armhf/Cuberite.tar.gz ./ 
+ADD https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz ./ 
 
 COPY Server .
 
