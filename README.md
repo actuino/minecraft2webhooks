@@ -3,6 +3,8 @@ A LUA plugin to send webhook events from within Minecraft.
 
 Works with the [Unicorn-Display](https://github.com/actuino/unicorn-display), in order to control a physical LED display from within Minecraft.
 
+![](https://raw.githubusercontent.com/actuino/minecraft2webhooks/master/res/montage.JPG)
+
 Uses the Cuberite Server : [https://github.com/cuberite/cuberite](https://github.com/cuberite/cuberite)
 
 Cuberite server supports Vanilla Minecraft clients.
