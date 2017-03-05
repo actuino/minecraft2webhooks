@@ -7,7 +7,7 @@ EXPOSE 25565
 EXPOSE 8080
 
 ADD https://builds.cuberite.org/job/Cuberite%20Linux%20raspi-armhf%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz ./ 
-
-COPY Server .
+RUN tar -zxf Cuberite.tar.gz && rm Cuberite.tar.gz
+ADD Server.tar.gz ./
 
 CMD ["/root/Server/Cuberite"]
